@@ -1,0 +1,40 @@
+{
+    "name": "TurnonCube",
+    "maps": [
+        {
+            "name": "New action map",
+            "id": "4cccb288-3965-4521-879c-914d4bb0b76c",
+            "actions": [
+                {
+                    "name": "StartMusic",
+                    "type": "Button",
+                    "id": "fd4d554d-af3e-4c48-a057-a2ef40c11da2",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "d8012c13-80d4-4a23-a4e9-3f7413321598",
+                    "path": "<Keyboard>/space",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "TURNONCUBE",
+                    "action": "StartMusic",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": [
+        {
+            "name": "TURNONCUBE",
+            "bindingGroup": "TURNONCUBE",
+            "devices": []
+        }
+    ]
+}
