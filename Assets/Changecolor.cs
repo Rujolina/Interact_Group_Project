@@ -14,7 +14,7 @@ public class Changecolor : MonoBehaviour
 
     private void OnCollisionEnter(UnityEngine.Collision collision)
     {
-        Debug.Log("OnCollisionEnter");
+        
         rend.material.color = GetRandomColor();
     }
 
