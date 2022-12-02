@@ -5,14 +5,15 @@ using UnityEngine;
 
 public class CUBEON : MonoBehaviour
 {
-    public float push = 20f;
+
+    Rigidbody m_Rigidbody;
     public AudioSource soundPlayer;
+
 
     // Start is called before the first frame update
     void Start()
     {
-
-
+        m_Rigidbody = GetComponent<Rigidbody>();
     }
 
     // Update is called once per frame
@@ -20,14 +21,11 @@ public class CUBEON : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Return))
         {
-            this.gameObject.AddComponent<Rigidbody>();
-            //this.gameObject.AddComponent<ConstantForce>();
             soundPlayer.Play();
-           // if (Input.GetKeyDown(KeyCode.Mouse0))
-            //{
-               // bub.AddForce(-transform.forward * 500);
-                //bub.useGravity = true;
-            //}
+            m_Rigidbody.constraints = RigidbodyConstraints.None;
+            //this.GetComponent<Changecolor>().enabled = true;
+
+
         }
         if (Input.GetKeyDown(KeyCode.Q))
         {
@@ -43,6 +41,11 @@ public class CUBEON : MonoBehaviour
             soundPlayer.UnPause();
         }
 
+
+    }
+
+    void OnMouseDown()
+    {
 
     }
 
